@@ -22,7 +22,7 @@ public class Bot extends TelegramLongPollingBot {
     public void onUpdateReceived(Update update) {
         try {
             execute(new SendMessage().setChatId(update.getMessage().getChatId())
-                    .setText("Hello gays!"));
+                    .setText("Hello guys!"));
         } catch (TelegramApiException e) {
             e.printStackTrace();
         }
